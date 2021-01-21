@@ -3,7 +3,6 @@ import _thread
 import hashlib 
 import os
 import subprocess
-
 host = "0.0.0.0"
 port = 45713
 

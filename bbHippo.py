@@ -26,6 +26,6 @@ def handler(clientsock,addr):
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind((host, port))
 s.listen(5)
-while 1:
+while True:
     clientsock, addr = s.accept()
     _thread.start_new_thread(handler, (clientsock, addr))

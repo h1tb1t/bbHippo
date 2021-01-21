@@ -4,7 +4,7 @@ import hashlib
 import os
 import subprocess
 
-host = "127.0.0.1"
+host = "0.0.0.0"
 port = 12345
 
 def handler(clientsock,addr):
